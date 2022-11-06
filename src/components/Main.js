@@ -59,7 +59,7 @@ const Links = () => {
 				{/* <a href={Person.contact} className="link-btn" id="book__design">
 					<Link to="/contact">Contact</Link>
 				</a> */}
-				<Link to="/contact" className="link-btn">
+				<Link to="/contact" className="link-btn" id="contact">
 					Contact
 				</Link>
 			</section>
