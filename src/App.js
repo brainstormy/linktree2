@@ -6,15 +6,13 @@ import Footer from './components/Footer';
 
 function App() {
 	return (
-		<div className="aas">
-			<BrowserRouter>
-				<Routes>
-					<Route exact path="/" element={<Main />} />
-					<Route path="contact" element={<ContactPage />} />
-				</Routes>
-				<Footer />
-			</BrowserRouter>
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route exact path="/" element={<Main />} />
+				<Route path="contact" element={<ContactPage />} />
+			</Routes>
+			<Footer />
+		</BrowserRouter>
 	);
 }
 
