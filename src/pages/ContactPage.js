@@ -44,7 +44,7 @@ const ContactPage = () => {
 				<p>Hi there, contact me to ask me about anything you have in mind.</p>
 				<form className="fm-ct" onSubmit={handleSubmit}>
 					<div className="input-container">
-						<label>First name</label>
+						<label for="first_name">First name</label>
 						<input
 							type="text"
 							id="first_name"
@@ -56,8 +56,7 @@ const ContactPage = () => {
 						<div className="error">{formErrors.firstname}</div>
 					</div>
 					<div className="input-container" id="left-input">
-						<label>Last name</label>
-
+						<label for="last_name">Last name</label>
 						<input
 							type="text"
 							id="last_name"
@@ -68,7 +67,7 @@ const ContactPage = () => {
 						/>
 						<div className="error">{formErrors.lastname}</div>
 					</div>
-					<label>Email</label>
+					<label for="email">Email</label>
 					<input
 						type="email"
 						id="email"
@@ -79,7 +78,7 @@ const ContactPage = () => {
 					/>
 					<div className="error">{formErrors.email}</div>
 
-					<label>Message</label>
+					<label for="message">Message</label>
 					<textarea
 						id="message"
 						name="message"
