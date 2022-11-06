@@ -67,6 +67,11 @@ input[type='email'] {
 	height: 44px;
 	/* margin-top: 34px; */
 }
+input[type='email']:focus {
+	border: 1px solid #84caff;
+	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+	border-radius: 8px;
+}
 .error {
 	color: #f83f23;
 	margin-top: 6px;
