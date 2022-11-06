@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import '../../src/Contact.css';
-// import Footer from '../components/Footer';
 
 const ContactPage = () => {
 	const name = 'Adedeji Olalekan';
@@ -9,7 +8,6 @@ const ContactPage = () => {
 	const initialValues = { firstname: '', lastname: '', email: '', message: '' };
 	const [formValues, setFormValues] = useState(initialValues);
 	const [formErrors, setFormErrors] = useState({});
-	// const [isSubmit, setIsSubmit] = useState(false);
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
@@ -19,14 +17,8 @@ const ContactPage = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setFormErrors(validate(formValues));
-		// setIsSubmit(true);
 	};
-	useEffect(() => {
-		// console.log(formErrors);
-		// if (Object.keys(formErrors).length === 0 && isSubmit) {
-		// 	console.log(formValues);
-		// }
-	}, [formErrors]);
+	useEffect(() => {}, [formErrors]);
 	const validate = (values) => {
 		const errors = {};
 		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -40,7 +32,7 @@ const ContactPage = () => {
 			errors.email = 'Enter a valid email';
 		}
 		if (!values.message) {
-			errors.message = 'Message is required';
+			errors.message = 'please enter a message';
 		}
 		return errors;
 	};
@@ -100,7 +92,7 @@ const ContactPage = () => {
 						<input type="checkbox" name="subscribe" required /> You agree to
 						providing your data to {name} who may contact you.
 					</label>
-					{/* <label>You agree to providing your data to who may contact you.</label> */}
+
 					<button type="submit" id="btn__submit" className="btn">
 						Send Message
 					</button>

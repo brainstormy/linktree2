@@ -102,7 +102,7 @@ textarea:focus {
 	outline: none;
 }
 
-.btn {
+#btn__submit {
 	padding: 12px 20px;
 	background: #1570ef;
 	border: 1px solid #1570ef;
@@ -116,19 +116,19 @@ textarea:focus {
 	line-height: 24px;
 	margin-top: 32px;
 }
-.btn:focus {
+#btn__submit:focus {
 	background: #1570ef;
 	border: 1px solid #1570ef;
 	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
 }
 
-.btn:hover {
+#btn__submit:hover {
 	background: #175cd3;
 	border: 1px solid #175cd3;
 	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 	border-radius: 8px;
 }
-.btn:disabled {
+#btn__submit:disabled {
 	background: #b2ddff;
 	border: 1px solid #b2ddff;
 	box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -137,7 +137,6 @@ textarea:focus {
 @media (max-width: 768px) {
 	.contact-container {
 		width: 343px;
-		/* margin: auto 16px; */
 	}
 	#left-input {
 		margin-left: 0px;
@@ -148,7 +147,7 @@ textarea:focus {
 	textarea {
 		width: 343px;
 	}
-	.btn {
+	#btn__submit {
 		width: 343px;
 	}
 }

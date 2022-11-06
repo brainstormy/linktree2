@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './components/Main';
 import ContactPage from './pages/ContactPage';
-// import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
