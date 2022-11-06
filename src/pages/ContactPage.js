@@ -32,7 +32,7 @@ const ContactPage = () => {
 			errors.email = 'Enter a valid email';
 		}
 		if (!values.message) {
-			errors.message = 'please enter a message';
+			errors.message = 'Please enter a message';
 		}
 		return errors;
 	};
