@@ -89,8 +89,9 @@ const ContactPage = () => {
 					/>
 					<div className="error">{formErrors.message}</div>
 					<label>
-						<input type="checkbox" name="subscribe" required /> You agree to
-						providing your data to {name} who may contact you.
+						<input type="checkbox" name="subscribe" required />
+						<span className="checkmark"></span>
+						You agree to providing your data to {name} who may contact you.
 					</label>
 
 					<button type="submit" id="btn__submit" className="btn">
